@@ -13,7 +13,7 @@ export default function LogIn() {
 
   async function handleLogIn() {
     try {
-      await logIn(email, password)
+      await logIn(email.trim(), password.trim())
     } catch (error) {
       if (error instanceof Error) {
         setError(error.message)

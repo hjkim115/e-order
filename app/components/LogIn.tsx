@@ -16,7 +16,7 @@ export default function LogIn() {
       await logIn(email.trim(), password.trim())
     } catch (error) {
       if (error instanceof Error) {
-        setError(error.message)
+        setError('Please enter valid email and password!')
       }
     }
   }

@@ -12,6 +12,7 @@ import {
   postOrderDetails,
 } from '@/app/utils/firebase'
 import { AuthContext } from '@/app/context/AuthContext'
+import Loading from '@/app/components/Loading'
 
 export default function Cart() {
   const [orderStatus, setOrderStatus] = useState<'Pending' | 'Placed' | null>(
@@ -233,7 +234,10 @@ export default function Cart() {
         <>
           {/* Status */}
           {orderStatus === 'Pending' ? (
-            <h1 style={{ color: 'blue' }}>Placing Order...</h1>
+            <div className={cartStyles.pending}>
+              <h1 style={{ color: 'blue' }}>Placing Order</h1>
+              <Loading size="1.5rem" />
+            </div>
           ) : null}
           {orderStatus === 'Placed' ? (
             <h1 style={{ color: 'green' }}>

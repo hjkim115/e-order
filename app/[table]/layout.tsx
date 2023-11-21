@@ -7,6 +7,10 @@ import { Table } from '@/app/utils/types'
 import { CartContextProvider } from '@/app/context/CartContext'
 import { AuthContext } from '../context/AuthContext'
 import LogIn from '../components/LogIn'
+import {
+  CurrentCategoryContext,
+  CurrentCategoryContextProvider,
+} from '../context/CurrentCategoryContext'
 
 export default function QrOrderLayout({
   children,
@@ -51,7 +55,11 @@ export default function QrOrderLayout({
       {user ? (
         <>
           {isValidTable() ? (
-            <CartContextProvider>{children}</CartContextProvider>
+            <CartContextProvider>
+              <CurrentCategoryContextProvider>
+                {children}
+              </CurrentCategoryContextProvider>
+            </CartContextProvider>
           ) : null}
         </>
       ) : user === null ? (

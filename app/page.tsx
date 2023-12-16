@@ -43,6 +43,9 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className={homeStyles.footer}>
+            <p>Developed by hjkim</p>
+          </div>
         </div>
       ) : user === null ? (
         <LogIn />

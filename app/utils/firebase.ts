@@ -55,7 +55,8 @@ export async function getCompanyName(store: string) {
 //Tables Get All
 export async function getAllTables(store: string) {
   const tablesRef = collection(doc(db, 'tables', store), 'tables')
-  const snapshot = await getDocs(tablesRef)
+  const tablesQuery = query(tablesRef, orderBy('id'))
+  const snapshot = await getDocs(tablesQuery)
 
   const tables: Table[] = []
   snapshot.forEach((table) => {

@@ -4,8 +4,8 @@ This website is food ordering website for restaurant employees. Users can select
 
 ## URL
 
-**Available at:** <a href='https://e-order-nine.vercel.app/'>https://e-order-nine.vercel.app/</a>/
-**Test email address:** test@email.com/
+**Available at:** <a href='https://e-order-nine.vercel.app/'>https://e-order-nine.vercel.app/</a>\
+**Test email address:** test@email.com\
 **Test password:** test1234
 
 ## Technologies Used

@@ -12,7 +12,7 @@ This website is food ordering website for restaurant employees. Users can select
 
 ![Diagram](https://github.com/hjkim115/e-order/blob/main/public/readMeImage/diagram.png)
 
-- Developed user interface of the website using **Next.js (React.js)** and **TypeScript**.
+- Developed user interface of the website using **Next.js (React.js)** and **TypeScript (JavaScript)**.
 - Connected user interface with **Firestore** cloud database and added user **authentication** features using **Firebase SDK**.
 - Used **AWS S3 bucket** and **Cloudfront CDN** to dynamically serve food images.
 

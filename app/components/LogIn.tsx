@@ -24,6 +24,7 @@ export default function LogIn() {
   return (
     <div className={authStyles.authContainer}>
       <h1>Log In</h1>
+
       <div className={authStyles.form}>
         <div>
           <p>Email</p>
@@ -43,6 +44,13 @@ export default function LogIn() {
         </div>
         {error ? <p style={{ color: 'red' }}>{error}</p> : null}
       </div>
+
+      <div className={authStyles.forTesting}>
+        <h2>For Testing</h2>
+        <p>Email: test@email.com</p>
+        <p>Password: test1234</p>
+      </div>
+
       <button onClick={handleLogIn}>Log In</button>
     </div>
   )
